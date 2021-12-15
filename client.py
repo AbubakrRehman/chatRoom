@@ -2,9 +2,6 @@ import socket
 import threading
 
 
-
-
-
 def receive():
     while True:
         try:
@@ -24,7 +21,7 @@ def write():
 
 if __name__=="__main__":
     NICKNAME=input('Enter a nickname: ')
-    host='192.168.218.227'
+    host='139.59.28.214'
     port=4001
     s=socket.socket()
     s.connect((host,port))
